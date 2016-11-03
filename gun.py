@@ -220,7 +220,7 @@ def new_game(event=''):
                         canv.itemconfig(screen1, text = 'Вы уничтожили цели за ' + str(bullet) + ' выстрелов')
                         for b in balls:
                             canv.delete(b.id)
-                            balls.clear()
+                        balls.clear()
 
         canv.update()
         time.sleep(0.03)
